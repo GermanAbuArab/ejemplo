@@ -28,6 +28,20 @@ if __name__ == '__main__':
     # 2 si el usuario ingresa otra cosa usar la funcion creada en llamada_api para imprimir el titulo de lo buscado
 
 
+if __name__ == '__main__':
+    while True:
+        user_input = input("Ingrese un título de libro para buscar o 'exit' para salir: ")
+        if user_input.lower() == "exit":
+            print("Saliendo del programa.")
+            break
+        else:
+            llamada_api(user_input)
+            imprimir_hola()
+
+
+
+
+
 
 
 
